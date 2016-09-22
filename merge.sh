@@ -7,10 +7,10 @@ do
     dir=`echo ${repo} | sed -e 's/\/.git/\//'`
     cd ${dir}
     echo ${dir}
-    git checkout uat-branch
-    git pull origin uat-branch
-    git merge uatd-1.2.2
-    git push origin uat-branch
+    git checkout master
+    git pull origin master
+    git merge uat-branch
+    git push origin master
     cd - &> /dev/null
 done
 
